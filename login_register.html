@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>login</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+</head>
+<body>
+   <div class="container">
+       <div class="section_left">
+          <!-- form login -->
+          <div class="form form_login">
+           <h3>Log in</h3>
+           <div class="card_icon">
+              <div><i class="fa-brands fa-facebook-f"></i></div>
+              <div><i class="fa-brands fa-google"></i></div>
+              <div><i class="fa-brands fa-linkedin"></i></div>
+             
+           </div>
+             <p>Welcome back! Please sign in to continue</p>
+              <form action=""   >
+                 <input type="text" placeholder="Email">
+                 <input type="text" placeholder="Password"> 
+                   <div class="foreget_pass">
+                    <a href="">Forget your password ?</a>
+                   </div> 
+                 <button class="btn login">Log in</button>
+              </form>
+          </div>
+          <!-- form register -->
+          <div class="form form_register">
+            <h3>Register</h3>
+            <div class="card_icon">
+               <div><i class="fa-brands fa-facebook-f"></i></div>
+               <div><i class="fa-brands fa-google"></i></div>
+               <div><i class="fa-brands fa-linkedin"></i></div>
+              
+            </div>
+            <p >Join us for the best login experience tailored just for you! </p>
+               <form action=""   >
+                  <div class="full_name">
+                     <input type="text" placeholder="First Name">
+                     <input type="text" placeholder="Last Name">
+                  </div>
+                 
+                  <input type="text" placeholder="Email">
+                  <input type="text" placeholder="Password"> 
+                  <input type="text" placeholder="Confirm Password"> 
+                    <div class="foreget_pass">
+                    
+                    </div> 
+                  <button class="btn login">Register</button>
+               </form>
+           </div>
+       </div>
+       <div class="section_right">
+             <div class="card">
+                 <h2>Hello, Friend!</h2>
+                 <p class="p_register">Join us for the best login experience tailored just for you! </p>
+                 <p class="p_login">Welcome back! Please sign in to continue.</p>
+                 
+                  <button class="btn register">Register</button>
+                  <button class="btn btn_login">Log in</button>
+                
+             </div>
+       </div>
+   </div>
+
+   <script>
+     let btn_register = document.querySelector('.register')
+     let btn_login = document.querySelector('.btn_login')
+     let card_left = document.querySelector(".card")
+     let form_login = document.querySelector('.form_login')
+     let form_register = document.querySelector('.form_register')
+     let p_register =document.querySelector('.p_register')
+     let p_login =document.querySelector('.p_login')
+
+     btn_register.addEventListener('click', () => {
+        form_login.style.display = "none";
+        form_register.style.display='block' ;
+        btn_register.style.display='none' ;
+        btn_login.style.display='block' ;
+        p_register.style.display="none" ;
+        p_login.style.display="block"
+     });
+
+     btn_login.addEventListener('click', () => {
+        form_login.style.display = "block";
+        form_register.style.display='none' ;
+        btn_register.style.display='block' ;
+        btn_login.style.display='none' ;
+        p_register.style.display="block";
+        p_login.style.display="none"
+     });
+
+   </script>
+</body>
+</html>

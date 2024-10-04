@@ -1,0 +1,180 @@
+*{
+ padding: 0%;
+ margin: 0%;
+ box-sizing: border-box;
+ font-family: Arial, Helvetica, sans-serif;
+}
+a{
+ text-decoration: none;
+ color: #000;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .container {
+     display: flex;
+     width: 80%;
+     margin: auto;
+     height: 80vh;
+     box-shadow: -8px 8px 4px #E0E0E0 ;
+     
+ }
+ .section_left, .section_right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+ .section_left{
+  
+ }
+ .section_left .form{
+  width: 50%;
+  height: auto;
+  min-height:50%;
+  
+ }
+ .section_left .form .card_icon{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  margin-top: 2em ;
+  margin-bottom: 2em;
+ }
+ .section_left .form .card_icon i{
+    font-size: 1.5em;
+ }
+ .section_left .form .card_icon div{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0px 0px 1px 2px #d6d5d5;
+ }
+ .section_left .form p{
+  text-align: center;
+  margin: 1em 0em;
+ }
+ .section_left .form form input{
+   width: 100%;
+   font-size: 1.6em;
+   padding: .6em;
+   border-radius: .3em;
+   margin-bottom:1em ;
+   background: #F3F6F8;
+   outline: none;
+   border: none;
+ }
+ .section_left .form form .btn{
+  background: #7FAD39;
+ }
+ .btn{
+  all: unset;
+   width:30% ;
+   color: white;
+   text-align: center;
+   padding: .5em;
+   font-size: 1.5em;
+   display: block;
+   margin:1em auto;
+   border-radius: 1em;
+   cursor: pointer;
+ }
+ .section_right{
+  background: #7FAD39;
+ }
+ .section_left .form h3{
+   font-size: 3.5em;
+   text-align: center;
+   font-weight: bold;
+ }
+ .section_right .card{
+  width: 60%;
+  height: auto;
+  min-height: 32%;
+  padding: .9em;
+ 
+ }
+
+ .section_left .foreget_pass{
+  text-align: center;
+ }
+
+
+
+ .section_right .card .btn{
+  background:transparent;
+  border:2px solid WHITE;
+  margin-top: 2em;
+ }
+ .section_right .card h2{
+  text-align: center;
+  font-size: 4em;
+  color: white;
+  margin: 1em 0em;
+}
+.section_right .card p{
+font-size: 1.2em;
+color: white;
+text-align: center;
+
+}
+.section_left .form_register{
+  display: none;
+  width: 60%;
+ }
+
+ .btn_login{
+  display: none;
+ }
+
+ .section_left .form .full_name{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+ }
+
+ .section_left .form .full_name input{
+  width: 49%;
+  
+ }
+
+ .p_login{
+  display: none;
+ }
+@media (max-width:1000px) {
+ 
+   .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0px 0px 10px #E0E0E0 ;
+    height: auto;
+     
+   }
+   .section_left ,.section_right{
+    width: 100%;
+   }
+   .section_left .form{
+    width: 90%;
+    padding: 6em 0em;
+    /* height: 100vh; */
+   }
+   .section_left .form_register{
+    width: 90%;
+   }
+   .section_right .card{
+    width: 100%;
+    padding: 3em 0em;
+   }
+}
